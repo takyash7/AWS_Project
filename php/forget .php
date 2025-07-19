@@ -33,11 +33,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = '2022pietcryash059@poornima.org';                 // SMTP username
-        $mail->Password = 'Yashtak@69';                           // SMTP password
+        $mail->Username = '';                 // SMTP username
+        $mail->Password = '';                           // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465;                                    // TCP port to connect to
-        $mail->setFrom('2022pietcryash059@poornima.org', 'M-Ticket (AWS)');
+        $mail->setFrom('', 'M-Ticket (AWS)');
         $mail->addAddress($email);                // Add a recipient
 
         // Content
